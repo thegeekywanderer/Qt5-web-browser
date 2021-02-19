@@ -112,7 +112,7 @@ class MainWindow(QMainWindow):
 			return
 
 		title = self.tabs.currentWidget().page().title() 
-		self.setWindowTitle("% s - Geek PyQt5" % title) 
+		self.setWindowTitle("% s - Browser" % title) 
 
 	def navigate_home(self): 
 		self.tabs.currentWidget().setUrl(QUrl("http://www.google.com")) 
@@ -135,6 +135,6 @@ class MainWindow(QMainWindow):
 
 
 app = QApplication(sys.argv) 
-app.setApplicationName("Geek PyQt5") 
+app.setApplicationName("PyQt5 Browser") 
 window = MainWindow()  
 app.exec_() 
